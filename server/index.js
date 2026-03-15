@@ -10,7 +10,12 @@ const usersRouter = require('./routes/users');
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:5173' })); // Vite default port
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://shabdha.vercel.app', // replace with your actual Vercel URL
+  ]
+}))
 app.use(express.json());
 
 // Routes
