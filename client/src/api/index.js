@@ -2,7 +2,7 @@ import axios from 'axios'
 import { auth } from '../config/firebase'
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://shabdha-server.onrender.com/api',
 })
 
 api.interceptors.request.use(async (config) => {
