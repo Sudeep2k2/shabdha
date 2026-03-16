@@ -5,7 +5,7 @@ import api from '../api'
 import toast from 'react-hot-toast'
 import Navbar from '../components/Navbar'
 
-const ADMIN_EMAIL = 'sudeep2102@gmail.com'
+const ADMIN_EMAIL = 'sudeepoj24@gmail.com'
 
 function StatBox({ label, value, color = 'text-ink' }) {
   return (

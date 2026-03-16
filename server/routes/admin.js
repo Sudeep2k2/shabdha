@@ -6,7 +6,7 @@ const admin = require('../config/firebase');
 
 const verifyAdmin = async (req, res, next) => {
   const ADMIN_EMAILS = [
-    'sudeep2102@gmail.com',
+    'sudeepoj24@gmail.com',
   ];
   if (!ADMIN_EMAILS.includes(req.user.email)) {
     return res.status(403).json({ error: 'Admin access required' });
